@@ -11,7 +11,7 @@
 		AE0521AA2445C8180054F82A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0521A92445C8180054F82A /* ViewController.swift */; };
 		AE0521AC2445C81B0054F82A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0521AB2445C81B0054F82A /* Assets.xcassets */; };
 		AE0521AF2445C81B0054F82A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0521AD2445C81B0054F82A /* Main.storyboard */; };
-		AE0521B82445C8270054F82A /* LocalCookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0521B72445C8270054F82A /* LocalCookies.swift */; };
+		AE0521B82445C8270054F82A /* CookieReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0521B72445C8270054F82A /* CookieReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		AE0521AE2445C81B0054F82A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE0521B02445C81B0054F82A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0521B12445C81B0054F82A /* CookieReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CookieReader.entitlements; sourceTree = "<group>"; };
-		AE0521B72445C8270054F82A /* LocalCookies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCookies.swift; sourceTree = "<group>"; };
+		AE0521B72445C8270054F82A /* CookieReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookieReader.swift; sourceTree = "<group>"; };
 		AE0521B92445C8710054F82A /* Cookies.binarycookies */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cookies.binarycookies; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				AE0521B92445C8710054F82A /* Cookies.binarycookies */,
-				AE0521B72445C8270054F82A /* LocalCookies.swift */,
+				AE0521B72445C8270054F82A /* CookieReader.swift */,
 				AE0521A72445C8180054F82A /* AppDelegate.swift */,
 				AE0521A92445C8180054F82A /* ViewController.swift */,
 				AE0521AB2445C81B0054F82A /* Assets.xcassets */,
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE0521AA2445C8180054F82A /* ViewController.swift in Sources */,
-				AE0521B82445C8270054F82A /* LocalCookies.swift in Sources */,
+				AE0521B82445C8270054F82A /* CookieReader.swift in Sources */,
 				AE0521A82445C8180054F82A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

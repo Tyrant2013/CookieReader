@@ -15,7 +15,7 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
         if let path = Bundle.main.path(forResource: "Cookies", ofType: "binarycookies") {
-            LocalCookieReader.read(from: path) { (cookies, error) in
+            CookieReader.read(from: path) { (cookies, error) in
                 if let cookies = cookies {
                     cookies.forEach {
                         print($0.domain)

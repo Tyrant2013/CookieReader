@@ -16,7 +16,7 @@ struct LocalPage {
     var cookieOffset: [Int]
 }
 
-struct LocalCookie {
+struct Cookie {
     var size: Int
     var expiration: Int64;
     var creation: Int64;
@@ -56,9 +56,9 @@ extension Data {
     }
 }
 
-class LocalCookieReader {
+class CookieReader {
     
-    class func read(from path: String, handler: @escaping (_ cookies: [LocalCookie]?, _ error: Error?) -> Void) {
+    class func read(from path: String, handler: @escaping (_ cookies: [Cookie]?, _ error: Error?) -> Void) {
         do {
             
             
@@ -67,7 +67,7 @@ class LocalCookieReader {
             /// 获取前 4 字节的标志符号
             let headData = data.dropLast(data.count - 4)
             if let str = String(data: headData, encoding: .utf8), str == "cook" {
-                var cookies = [LocalCookie]()
+                var cookies = [Cookie]()
                 
                 let dataHead = data.advanced(by: 4)
                 /// 获取 Page 的数量
@@ -150,7 +150,7 @@ class LocalCookieReader {
                         let name = parseCookie(curPageData, seek: offset + nameStart)!
                         let path = parseCookie(curPageData, seek: offset + pathStart)!
                         let value = parseCookie(curPageData, seek: offset + valueStart)!
-                        let cookie = LocalCookie(size: cookieSize,
+                        let cookie = Cookie(size: cookieSize,
                                                  expiration: expirDateInterval,
                                                  creation: createDateInterval,
                                                  domain: domain,
